@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\views;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
+use App\Models\Myuser;
+
 
 
 /*
@@ -15,6 +19,9 @@ use Illuminate\Support\Facades\views;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('login');
 });
+
+Route::post("/login",[UserController::class,'login']);
+Route::get("/",[ProductController::class,'index']);
