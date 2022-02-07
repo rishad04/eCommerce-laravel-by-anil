@@ -19,6 +19,10 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	
+
+</style>
+
 
 </head>
 <body>
@@ -37,10 +41,36 @@
 
 </body>
 <style>
-	.custom-login{
-		height: 300px;
-		padding-top: 20px;
-	}
-</style>
+		.custom-login{
+			height: 300px;
+			padding-top: 20px;
+		}
+		img.slider-img{
+			width: 100%;
+			height: 300px !important
 
+		}
+		.custom-products{
+			height: 300px;
+			
+		}
+		.trending-wrapper{
+			margin: 20px;
+		}
+		.trending-items{
+			height: 100px;
+
+		}
+		.trending-products{
+			float: left;
+			width: 20%;
+
+		}
+		.link-img{
+			height: 200px;
+		}
+		.details-margin{
+			margin: 20px;
+		}
+	</style>
 </html>
