@@ -45,14 +45,8 @@
   <h3>Trending Products</h3>
   <div class="carousel-inner">
     @foreach($products as $item)
-    <div class="trending-products">
-      <a href="details/{{$item['id']}}">
-        <img class="trending-items" src="{{$item['gallery']}}">
-      <div class="carousel-caption">
-        <h3>{{$item['name']}}</h3>
-        <p>{{$item['description']}}</p>
-      </div>
-      </a>
+    <div class="trending-products ">
+      <a href="details/{{$item['id']}}"><img class="trending-items" src="{{$item['gallery']}}" alt=""></a>
     </div>
     @endforeach
   </div>

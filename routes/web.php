@@ -22,7 +22,13 @@ use App\Models\Myuser;
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('/');
+});
 
 Route::post("/login",[UserController::class,'login']);
 Route::get("/",[ProductController::class,'index']);
 Route::get("details/{id}",[ProductController::class,'details']);
+Route::post("add_to_cart",[ProductController::class,'addToCart']);
+
